@@ -1,0 +1,46 @@
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+body {
+    background: orange;
+    text-align: center;
+    height: 5000px;
+}
+
+button {
+    background: green;
+    font-size: large;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header__button {
+    color: white;
+    border: 2px dashed white;
+    transition: color 1s ease-out;
+}
+
+.header__button.header__button--border {
+    border: 5px dashed yellow;
+}
+
+.header__button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.header__button:focus {
+    background-color: purple;
+}
+
+@media screen and (min-width: 300px) {
+    .header__button {
+        border: 2px dashed blue;
+    }
+}
